@@ -10,7 +10,7 @@
             border-bottom: solid gray;
         }
 
-        /* Reusable layout classes */
+        /* 1. New consolidated layout classes */
         .left-side {
             flex: 90%;
         }
@@ -24,14 +24,13 @@
             text-align: center;
             min-width: 4em;
             height: 1em;
-            /* flex: 10% removed from here as it is now handled by .right-side */
+            /* flex: 10% has been DELETED from here */
         }
 
         .task-form-row {
             display: flex;
         }
-        
-        /* Specific background colors for the status bubbles */
+
         .todo { background-color: red; }
         .doing { background-color: yellow; }
         .done { background-color: green; }
