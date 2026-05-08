@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Task App</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .row {
+        /* Consolidate layout logic here */
+        .row, .task-form-row {
             display: flex;
+        }
+
+        .row {
             border-bottom: solid gray;
         }
 
-        /* 1. New consolidated layout classes */
+        /* 1. Use the new requested class names */
         .left-side {
             flex: 90%;
         }
@@ -19,24 +22,15 @@
             flex: 10%;
         }
 
+        /* 2. task-status no longer has flex: 10% */
         .task-status {
             border-radius: 10px;
             text-align: center;
             min-width: 4em;
             height: 1em;
-            /* flex: 10% has been DELETED from here */
         }
-
-        .task-form-row {
-            display: flex;
-        }
-
-        .todo { background-color: red; }
-        .doing { background-color: yellow; }
-        .done { background-color: green; }
     </style>
 </head>
-
 <body>
     <form id="task-form">
         <div class="task-form-row">
@@ -68,5 +62,4 @@
         </div>
     </div>
 </body>
-
 </html>
